@@ -1,0 +1,25 @@
+The most common ways to convert an array to an object in JavaScript are:
+
+Object.assign() method - the keys are the array indexes and the values are the array elements.
+Array.forEach() method - enables you to specify custom keys.
+Object.fromEntries() method - transforms an array of key-value pairs into an object.
+
+Object.fromEntries() method if you need to convert an array of key-value pairs to an object.
+Object.assign() method or the spread syntax (...) if the array's indexes should be the object's keys.
+Array.forEach() or Array.reduce() method if you need to customize the keys.
+Array.map() and Object.fromEntries() methods if you need to convert an array of objects to an object.
+
+
+Convert an array to object using Object.assign() method
+
+The Object.assign() method was introduced in ES6, and it copies the values of all enumerable own properties from one or more source objects to a target object. It has the following syntax:
+
+Object.assign(target, ...sources)
+The target object is the first argument and is also used as the return value. The following example demonstrates how you can use the Object.assign() method to convert an array to an object:
+
+
+Convert an array to object using spread operator
+Another way to convert an array to an object is by using the object spread ({... iterable}) operator. 
+
+
+Convert an array to object using Array.forEach() method
